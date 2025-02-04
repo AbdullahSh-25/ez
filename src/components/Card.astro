@@ -1,0 +1,17 @@
+---
+//src/components/Card.astro
+const {name, position, aboutMe} = Astro.props;
+
+import '../styles/card.css';
+---
+
+<div class="container">
+    <div class="card-container">
+        <div class="descripcion">
+            <h1>{name}</h1>
+            <hr style="width: 100%; border: 1px solid #ffffff; margin: 10px 0;">
+            <h2>{position}</h2>
+            <p>{aboutMe}</p>
+        </div>
+    </div>
+</div>
